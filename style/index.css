@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #111;
+}
+
+/* CSS untuk banner */
+.banner {
+    position: relative; /*?*/
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;    /*bisa diganti dengan 1*/
+    align-items: center;        /*bisa diganti dengan 1*/
+    background-image: url(/images/mountain1.jpg);
+    background-size: cover;
+}
+
+.banner .content {
+    /* margin: auto; */         /*bisa diganti dengan 1*/
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-size: 4em;
+    color: #474747;
+}
+
+.banner .content p {
+    color: #474747;
+}
+
+.btn {
+    color: #fff;
+    background-color: #96EDCD;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;           /*belajar css transition*/
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+    background-color: #ff4483;
+}
