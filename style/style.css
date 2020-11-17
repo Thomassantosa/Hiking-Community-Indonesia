@@ -1,0 +1,150 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+
+}
+#formulir
+{
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+
+
+/*Css Form*/
+form
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid white;
+    box-shadow: 2px 5px 5px 3px rgb(167, 165, 165);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+form h1
+{
+    text-align: center;
+    color: white;
+}
+
+
+form .inputStyle
+{
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 2px solid gray;
+    background-color: rgba(0,0,0,0);
+    display: block;
+}
+form input::placeholder
+{
+    font-size: 18px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(255, 255, 255);
+}
+form #submit
+{
+    display: block;
+    margin: 50px 0 20px 35%;
+    width: 30%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 2px white;
+}
+form #submit:hover
+{
+    background-color: gray;
+    position: relative;
+    box-shadow: 0px 0px 0px 1px white;
+    top: 2px;
+    left: 2px;
+}
+
+form #pindah
+{
+    margin: 10px 0;
+    font-size: 18px;
+    color: aqua;
+    float: right;
+}
+
+/*Untuk Form saat Masuk*/
+form .tagA
+{
+    display: block;
+    text-align: justify;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 0px 10px 100px;
+    margin: 20px auto;
+    box-shadow: 1px 1px 3px 1px white;
+    background-position: 40px;
+    width: 100%;
+}
+form .tagA img
+{
+    width: 30px;
+}
+form .btnFacebook
+{
+    background-image: url('/images/iconFacebook.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-color: rgba(0, 84, 240, .5);
+}
+form .btnGoogle
+{
+    background-image: url('/images/iconGoogle.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-color: rgba(204, 37, 14, .5);
+}
+form .btnYahoo
+{
+    background-image: url('/images/iconYahoo.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-color: rgba(145, 1, 212, .5);
+}
+form .btnTamu
+{
+    background-image: url('/images/iconTamu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-color: rgba(175, 175, 175, .5);
+}
+
+/*Batas Login*/
+form fieldset
+{
+    width: 100%;
+    margin: 30px 0;
+    padding: 30px 0;
+    border: none;
+    border-top: 1px solid white;
+}
+form fieldset legend
+{
+    color: white;
+    text-align: center;
+}
