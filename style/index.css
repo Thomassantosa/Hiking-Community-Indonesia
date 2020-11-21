@@ -7,19 +7,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 2000px;
+    background-color: #C2C8CC;
 }
 
 p {
     color: #111;
 }
 
-
-
 /* CSS untuk banner */
 .banner {
     position: relative; /*?*/
+    /* z-index: -1; */
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
     display: flex;
     justify-content: center;    /*bisa diganti dengan 1*/
     align-items: center;        /*bisa diganti dengan 1*/
@@ -54,6 +55,6 @@ p {
 }
 
 .btn:hover {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     background-color: #ff4483;
 }
