@@ -6,23 +6,42 @@
     <meta name="description" content="Home page for Hiking Community Indonesia">
     <meta name="author" content="Thomas Budi Santosa">
     <title>Home</title> 
+
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel ="icon" href = "images/Asset 7.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/main.js"></script>
 </head>
 <body>   
     <!-- Navigation -->
-    <header>
-        <a id="logoText" href="#"><img id="logo" src="/images/logo2_green.png" alt="Logo"></a>
-        <div class="nav-right">
-            <a id="active" href="#">Home</a>
-            <a href="#">Daftar Gunung</a>
-            <a href="#">Tips</a>
-            <a href="#">Alat Hiking</a>
-            <a href="#">Survival skills</a>
-            <a href="#">News</a>
-            <a href="#">Account</a>
+    <nav>
+        <div>
+            <img src="images/logo2_green.png" alt="logo" class="logo">
         </div>
-    </header>
+
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Daftar Gunung</a></li>
+            <li><a href="#">Tips</a></li>
+            <li><a href="#">Alat Hiking</a></li>
+            <li><a href="#">Survival Skills</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+
+        <div class="menu-toggle"">
+            <input type="checkbox" id="menu">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+        </div>
+    </nav>
+
+    <!-- javascript untuk navigation -->
+    <script src="script/main.js"></script>
+
 
     <!-- Banner -->
     <div class="banner" id="banner">
