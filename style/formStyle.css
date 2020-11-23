@@ -8,6 +8,7 @@ body
     margin: 0;
     padding: 0;
 
+
 }
 #formulir
 {
@@ -19,7 +20,8 @@ body
 
 
 
-/*Css Form*/
+
+/*CSS Form*/
 form
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -40,22 +42,32 @@ form h1
 
 form .inputStyle
 {
+    border-radius: 10px;
     height: 50px;
     width: 100%;
     margin: 20px 0;
     border: none;
     color: white;
-    font-size: 18px;
+    text-shadow: 2px 2px 2px #00f79c;
+    font-size: 20px;
     border-bottom: 2px solid gray;
     background-color: rgba(0,0,0,0);
     display: block;
 }
+form .inputStyle:hover
+{
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
 form input::placeholder
 {
     font-size: 18px;
     font-style: italic;
     text-shadow: 2px 2px 2px black;
     color: rgb(255, 255, 255);
+    padding-left: 20px;
 }
 form #submit
 {
@@ -63,88 +75,103 @@ form #submit
     margin: 50px 0 20px 35%;
     width: 30%;
     padding: 15px;
-    color: white;
+    color: #96EDCD;
     font-weight: bold;
     font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     box-shadow: 1px 1px 3px 2px white;
 }
-form #submit:hover
+form #submit:hover , form .btn:hover
 {
-    background-color: gray;
     position: relative;
-    box-shadow: 0px 0px 0px 1px white;
+    box-shadow: 0px 0px 0px .5px white;
     top: 2px;
     left: 2px;
 }
 
 form #pindah
 {
+    display: block;
     margin: 10px 0;
     font-size: 18px;
-    color: aqua;
+    color: #96EDCD;
     float: right;
+}
+form #pindah:hover
+{
+    color: #00f79c;
 }
 
 /*Untuk Form saat Masuk*/
 form .tagA
 {
     display: block;
-    text-align: justify;
     text-decoration: none;
     color: white;
     border-radius: 20px;
-    padding: 10px 0px 10px 100px;
+    padding: 10px 0px 10px 150px;
     margin: 20px auto;
     box-shadow: 1px 1px 3px 1px white;
-    background-position: 40px;
+    background-position: 15%;
     width: 100%;
 }
-form .tagA img
+
+form .btn
 {
-    width: 30px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    opacity: .7;
 }
-form .btnFacebook
+
+form .btn:hover
+{
+    opacity: 1;
+}
+
+form .Facebook
 {
     background-image: url('/images/iconFacebook.png');
-    background-repeat: no-repeat;
-    background-size: 35px;
-    background-color: rgba(0, 84, 240, .5);
+    background-color: rgb(0, 84, 240);
+    
 }
-form .btnGoogle
+
+form .Google
 {
     background-image: url('/images/iconGoogle.png');
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-color: rgba(204, 37, 14, .5);
+    background-color: rgb(204, 37, 14);
 }
-form .btnYahoo
+form .Yahoo
 {
     background-image: url('/images/iconYahoo.png');
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-color: rgba(145, 1, 212, .5);
+    background-color: rgb(145, 1, 212);
 }
-form .btnTamu
+form .Tamu
 {
     background-image: url('/images/iconTamu.png');
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-color: rgba(175, 175, 175, .5);
+    background-color: rgb(175, 175, 175);
 }
 
 /*Batas Login*/
 form fieldset
 {
     width: 100%;
-    margin: 30px 0;
-    padding: 30px 0;
+    padding: 0px;
     border: none;
-    border-top: 1px solid white;
 }
 form fieldset legend
 {
     color: white;
+    border-radius: 50px;
     text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+form label
+{
+    margin-left: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px #00f79c;
 }
