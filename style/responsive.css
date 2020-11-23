@@ -1,0 +1,88 @@
+
+
+@media screen and (max-width: 780px)
+{
+    .container
+    {
+        display: block;
+    }
+    .container #content
+    {
+        width: 100%;
+    }
+    .container #left
+    {
+        width: 100%;
+    }
+    .container #left .mark
+    {
+        margin: 20px;
+        padding-bottom: 0;
+    }
+    .container #left .mark #atas1
+    {
+        display: none;
+    }
+
+
+
+    #content article .right
+    {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    #content article .right iframe
+    {
+        display: block;
+        width: 100%;
+        height: 315px;
+    }
+
+    #content article .isiArticle
+    {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /*Responsive formulir*/
+    #formulir
+    {
+        width: 100%;
+        padding: 30px;
+        margin: 10px;
+    }
+    form
+    {
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+}
+
+/* @media screen and (max-width: 1000px)
+{
+    #content article .right
+    {
+        width: 27%;
+    }
+} */
+
+@media screen and (min-width: 781px) and (max-width: 1300px)
+{
+    #left
+    {
+        width: 30%;
+    }
+    #content article .right
+    {
+        clear: both;
+        width: 100px;
+    }
+
+    #content article .right iframe
+    {
+        margin: 0 auto;
+        width: auto;
+    }
+}

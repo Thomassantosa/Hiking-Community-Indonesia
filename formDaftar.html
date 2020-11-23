@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Formulir Daftar Akun">
+        <meta name="author" content="Adithia Tirta Zulfikar">
+        <title>Buat Akun</title>
+        <link rel="stylesheet" href="style/formStyle.css">
+        <link rel="stylesheet" href="style/responsive.css">
+        <link rel ="icon" href = "images/icon.png">
+        <link rel="stylesheet" href="style/main.css">
+        <script src="script/jquery-3.5.1.js"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav>
+            <div>
+                <img src="images/logo2_green.png" alt="logo" class="logo">
+            </div>
+
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Daftar Gunung</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Alat Hiking</a></li>
+                <li><a href="#">Survival Skills</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+
+            <div class="menu-toggle"">
+                <input type="checkbox" id="menu">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </nav>
+        
+
+        <div id="formulir">    
+        <!--Formulir-->
+        <!-- Action nanti isi sama index web aja ke halaman utama -->
+            <form action="#">
+                <h1>Buat Akun Baru</h1>
+                <fieldset>
+                    <input type="text" id="nama" class="inputStyle" placeholder="Nama Pengguna*" value="">
+                    <p id="infoNama"></p>
+                    <input type="email" id="email" class="inputStyle" placeholder="Email*">
+                    <p id="infoEmail"></p>
+                    <input type="text" id="gunung" class="inputStyle" list="gunungList" placeholder="Gunung Kesukaan*">
+                    <datalist id="gunungList">
+                        <option value="Bromo"></option>
+                        <option value="Sumeru"></option>
+                        <option value="Rinjani"></option>
+                        <option value="Merapi"></option>
+                        <option value="Merbabu"></option>
+                        <option value="Sumbing"></option>
+                    </datalist>
+                    <p id="infoGunung"></p>
+                    <input type="password" id="pw" class="inputStyle" placeholder="Kata Sandi*">
+                    <input type="checkbox" id="lihatPw"><label>Lihat Kata Sandi</label>
+                    <p id="infoPassword"></p>
+                    <input type="password" id="pw2" class="inputStyle" placeholder="Konfirmasi Kata Sandi*">
+                    <input type="checkbox" id="lihatPw2"><label>Lihat Kata Sandi</label>
+                    <p id="infoPassword2"></p>
+                    <input type="submit" value="Selesai" id="submit">
+                    <a href="formMasuk.html" id="pindah">Sudah Punya Akun ?</a>
+                </fieldset>
+                
+            </form>
+        </div>
+
+        <!-- javascript untuk navigation -->
+        <script src="script/main.js"></script>
+        <!-- javascript untuk Form -->
+        <script src="script/formDaftar.js"></script>
+    </body>
+</html>
