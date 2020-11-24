@@ -1,24 +1,31 @@
 $(document).ready(function()
 {
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    //Membuat Background Image berganti Tiap 5 detik
     var i = 0;
-    var img = new Array( "bg.jpg", "bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jp  g");
-   
-   function changeBg() {
-    $('#headerDaftarGunung').css("background-image", "url(images/" + img[i] + " )"); 
-    i++;
-   
-   if(i == img.length) {
-    i = 0;
-    }
-   
-   setTimeout(changeBg, 5000);
-    }
-   
-   changeBg();
+    var img = new Array( "bg.jpg", "bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg");
+   /*
+        menulis array atau bisa dengan
+        var img = [ ]
+   */
 
-    //====================================
+   function ubahBackgroundImage() {
+        $('#headerDaftarGunung').css("background-image", "url(images/daftarGunung/" + img[i] + " )"); 
+        i++;
+
+        
+        if(i == img.length) {
+            i = 0;
+            }
+        
+        setTimeout(ubahBackgroundImage, 5000);
+    }
+   
+    ubahBackgroundImage();
+
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //Script untuk Article Daftar Gunung
-    //====================================
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     //Hide Awal di Load
     $(".rute , .biaya").hide();
