@@ -1,15 +1,42 @@
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Responsive untuk layar HP*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media screen and (max-width: 780px)
 {
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*Header gambar*/
+    #headerDaftarGunung
+    {
+        height: 400px;
+    }
+    #headerDaftarGunung p
+    {
+        margin: 10px auto;
+        width: 25em;
+    }
+    .batas
+    {
+        height: 50px;
+    }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*Wadah*/
     .container
     {
+        position: relative;
         display: block;
     }
     .container #content
     {
         width: 100%;
     }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /*bookmark di kiri jadi ke tengah*/
     .container #left
     {
         width: 100%;
@@ -17,72 +44,132 @@
     .container #left .mark
     {
         margin: 20px;
-        padding-bottom: 0;
+        padding: 10px;
+        height: 200px;
     }
     .container #left .mark #atas1
     {
         display: none;
     }
 
+    /*Bookmark Tambahan*/
+    .atas2
+    {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        opacity: .9;
+        z-index: 10;
+    }
+    .atas2:active
+    {
+        bottom: 15px;
+        left: 15px;
+    }
 
 
+    /*Content Kanan dan article text*/
     #content article .right
     {
+        clear: both;
         width: 100%;
-        margin-bottom: 100px;
+        
     }
     #content article .right iframe
     {
-        display: block;
-        width: 100%;
-        height: 315px;
+        clear: both;
+        margin: 25px 0 50px 0;
+        height: 20em;
     }
 
     #content article .isiArticle
     {
         padding: 10px;
+        margin: 10px 0;
         width: 100%;
+        text-align: justify;
     }
 
+    
     /*Responsive formulir*/
     #formulir
     {
         width: 100%;
-        padding: 30px;
+        padding: 100px 20px;
         margin: 10px;
     }
     form
     {
         width: 100%;
         padding: 20px;
-        margin: 10px;
+        margin: 0;
+    }
+    form .btn
+    {
+        background-position: 10%;
+        padding-left: 25%;
     }
     
 }
 
-/* @media screen and (max-width: 1000px)
-{
-    #content article .right
-    {
-        width: 27%;
-    }
-} */
 
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Responsive untuk layar Tablet*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 @media screen and (min-width: 781px) and (max-width: 1300px)
 {
+    #headerDaftarGunung
+    {
+        padding-top: 200px;
+        height: 500px;
+    }
+    .batas{height: 100px;}
+
+
+    /*Bookmarking*/
     #left
     {
         width: 30%;
     }
+
+
+
+
+    /*Content Article*/
+    #content article .isiArticle
+    {
+        margin: 0;
+        width: 100%;
+    }
     #content article .right
     {
         clear: both;
-        width: 100px;
+        width: 100%;
     }
 
     #content article .right iframe
     {
-        margin: 0 auto;
-        width: auto;
+        margin: 20px auto;
+        width: 100%;
+        height: 20em;
     }
+
+
+    /*Responsive formulir*/
+    #formulir
+    {
+        padding: 50px;
+    }
+    #formulir form
+    {
+        width: 70%;
+    }
+    #formulir form fieldset a
+    {
+        padding-left: 30%;
+    }
+    
 }

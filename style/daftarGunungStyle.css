@@ -2,29 +2,25 @@
 {
     box-sizing: border-box;
 }
+body
+{
+    margin: 0;
+    padding: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*CSS HEADER DAFTAR GUNUNG*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Background Pembuka*/
 #headerDaftarGunung
 {
     margin: 0 auto;
     width: 100%;
     height: 600px;
-    padding-top: 15%;
+    padding-top: 10%;
     background-size: cover;
     background-image: url(/images/bg1.jpg);
 }
@@ -41,11 +37,15 @@
     color: #96EDCD;
     text-shadow: 5px 5px 10px white;
 }
-.container
+#headerDaftarGunung p
 {
-    display: flex;
-    flex-direction: row;
+    margin: 5em auto;
+    width: 50em;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 10px #96EDCD;
 }
+
 .batas
 {
     width: 100%;
@@ -54,6 +54,20 @@
     border: 2px solid #39a37c;
     box-shadow: 2px 0 3px 2px #39a37c;
 }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Sebagai  Marking*/
 #left
 {
     position: relative;
@@ -65,12 +79,14 @@
     border-radius: 10px;
     margin: 20px 0 0 20px;
     border: 2px solid #96EDCD;
+    background-color: rgba(102, 255, 171, 0.13);
     box-shadow: 2px 2px 3px 3px #96EDCD;
     position: sticky;
     top: 20%;
 }
 #left .mark h4
 {
+    color: #39a37c;
     text-shadow: 2px 2px 4px #39a37c;
 }
 #left .mark ul li
@@ -81,7 +97,9 @@
 }
 #left .mark ul li a
 {
-    color: black;
+    color: white;
+    text-shadow: 2px 2px 1px #39a37c;
+    
 }
 #left .mark ul li a:hover
 {
@@ -101,13 +119,24 @@
     width: 50px;
     border-radius: 100px;
     background-color: #96EDCD;
+    box-shadow: 2px 2px 2px 1px black;
 }
 .keAtas:hover
 {
-    background-color: #39a37c;
+    color: navy;
+    background-color: #49ffbc;
+}
+.atas2
+{
+    display: none;
 }
 
 
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Content Article*/
 #content
 {
     position: relative;
@@ -130,14 +159,20 @@
 {
     padding: 20px;
 }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Content Article Deskripsi*/
 #content article .isiArticle
 {
+    background-color: rgba(102, 255, 171, 0.13);
     border-radius: 10px;
     border: 2px solid#96EDCD;
     box-shadow: 2px 2px 3px 3px #96EDCD;
     padding: 50px;
     display: inline-block;
     clear: both;
+    margin-left: 20px;
     width: 70%;
 }
 #content article .isiArticle h1
@@ -156,6 +191,10 @@
     line-height: 20px;
 }
 
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Video Youtube Di kanan*/
 #content article .right
 {
     width: 25%;
@@ -176,13 +215,15 @@
 
 
 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Isi article Tambahan List dan Table*/
 #content article ul li
 {
     list-style-position: inside;
     list-style-type: circle;
     margin: 10px 0;
 }
-
 
 table
 {
