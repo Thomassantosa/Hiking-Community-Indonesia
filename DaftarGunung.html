@@ -13,46 +13,70 @@
     <script src="script/jquery-3.5.1.js"></script>
 </head>
     <body>
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!-- Navigation -->
         <!-- Navigation -->
         <nav>
             <div>
-                <img src="images/logo2_green.png" alt="logo" class="logo">
+                <a href="#"><img src="images/logo2_green.png" alt="logo" class="logo"></a> 
             </div>
 
             <ul class="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Daftar Gunung</a></li>
-                <li><a href="#">Tips</a></li>
+                <li><a href="test.html">Daftar Gunung</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Tips</button>
+                    <div class="dropdown-content">
+                        <a href="#">Tips Mendaki</a>
+                        <a href="#">Tips Fotografi</a>
+                    </div>
+                </div>
                 <li><a href="#">Alat Hiking</a></li>
                 <li><a href="#">Survival Skills</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Account</a></li>
             </ul>
 
-            <div class="menu-toggle"">
+            <div class="menu-toggle"" >
                 <input type="checkbox" id="menu">
                 <div id="line1"></div>
                 <div id="line2"></div>
                 <div id="line3"></div>
             </div>
         </nav>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-        <!--Header-->
-        <main>
 
         
-                
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--Bookmark saat Layar HP-->
+        <a href="#headerDaftarGunung" class="keAtas atas2">Atas</a>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+
+
+                       
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--Contentnya-->
+        <main>
+
+            
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <!--Background Image yang silih berganti-->
             <header id="headerDaftarGunung">
                 <h1>Daftar Gunung Pendakian</h1>
+                <p>Selain dikenal sebagai negara kepulauan dengan kekayaan alam melimpah, Indonesia juga sering dianggap sebagai surga para pendaki. Mengapa? Hal ini bisa dilihat dari letak geografisnya, yang merupakan tempat bertemu pegunungan Sirkum Pasifik dan Sirkum Mediterania.</p>
             </header>
-            
-            <div class="batas">
 
-            </div>
-
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <!--Batas warna-->
+            <div class="batas"></div> 
             
             <div class="container">
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--Content Di kiri Bookmark-->
                 <aside id="left">
                     <div class="mark">
                         <h4>Daftar Gunung</h4>
@@ -63,16 +87,23 @@
                             <li><a href="#gunung4">Gunung Papandayan</a></li>
                             <li><a href="#gunung5">Gunung Rinjani</a></li>
                             <li id="listKeAtas">
-                                <!--Bookmark ke atas-->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                                <!--Bookmark ke Tablet PC-->
                                 <a href="#headerDaftarGunung" id="atas1" class="keAtas">Atas</a>
                             </li>
                         </ul>
                     </div>
                 </aside>
-
-                
+                        
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--Content Utama-->
                 <div id="content">
+                    
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <!-- Beberapa Article-->
                     <article>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!-- isiArticle Content Article utama Descripsi-->
                         <div class="isiArticle">
                             <h1 id="gunung1">Gunung Bromo</h1>
                             <p>Gunung berapi aktif di Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.329 meter di atas permukaan laut dan berada dalam empat wilayah kabupaten, yakni Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan Kabupaten Malang.</p>
@@ -111,8 +142,10 @@
                                 </section>
                         </div>
 
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--Menampilkan Embed video youtube-->
                         <aside class="right">
-                            <iframe  src="https://www.youtube.com/embed/uhvbv3nO7kA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  src="https://www.youtube.com/embed/uhvbv3nO7kA" frameborder="0" allowfullscreen></iframe>
                         </aside>
 
                         
@@ -167,7 +200,7 @@
                         </div>
                         
                         <aside class="right">
-                            <iframe src="https://www.youtube.com/embed/F5U9sSBT6bU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/F5U9sSBT6bU" frameborder="0" allowfullscreen></iframe>
                         </aside>
                     </article>
                     <article class="">
@@ -216,7 +249,7 @@
                         </div>
 
                         <aside class="right">
-                            <iframe src="https://www.youtube.com/embed/WciGjyB-W0M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/WciGjyB-W0M" frameborder="0" allowfullscreen></iframe>
                         </aside>
 
                     </article>
@@ -277,7 +310,7 @@
                         </div>
 
                         <aside class="right">
-                            <iframe src="https://www.youtube.com/embed/4D8yqpmhYaY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/FFEYqA_-Fhc" frameborder="0" allowfullscreen></iframe>
                         </aside>
 
                     </article>
@@ -319,19 +352,21 @@
                                             <td>IDR 250.000,-</td>
                                         </tr>
                                     </table>
-                                </section>
+                                </section> 
                         </div>
 
                         <aside class="right">
-                            <iframe src="https://www.youtube.com/embed/36rnkAB_8Ts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/36rnkAB_8Ts" frameborder="0" allowfullscreen></iframe>
                         </aside>
                     </article>
                 </div>
 
 
             </div>
-            
         </main>
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!-- javascript untuk navigation -->
         <script src="script/main.js"></script>
         <!-- javascript untuk daftar Gunung -->
